@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 20px 100px;
+        }
+
+        h1 {
+            text-decoration: underline;
+            text-align: center;
+        }
+
+        img {
+            width: 51%;
+            height: auto;
+            margin: 50px 318px;
+            box-shadow: -19px 8px 79px;
+        }
+
+        p {
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        #color-change {
+            text-align: right;
+        }
+
+        .btn {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: solid grey 2px;
+            cursor: pointer;
+
+        }
+
+        #white {
+            background-color: white;
+
+        }
+
+        #aqua {
+            background-color: #7fffd4;
+
+        }
+
+        #violet {
+            background-color: #ce9aff;
+
+
+        }
+
+        #black {
+            background-color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="color-change">
+        <span class="btn" id="white" onclick="changeBg('#ffffff')"></span>
+        <span class="btn" id="aqua" onclick="changeBg('#7fffd4')"></span>
+        <span class="btn" id="violet" onclick="changeBg('#ce9aff')"></span>
+        <span class="btn" id="black" onclick="changeBg('#000000')"></span>
+    </div>
+    <h1 class="text">About Us</h1>
+    <img src="./samantha-gades-BlIhVfXbi9s-unsplash.jpg" alt="">
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ex provident expedita ducimus
+        voluptates ratione architecto alias. Quas expedita voluptates deleniti nihil consectetur dolorum mollitia
+        libero, adipisci, esse, doloremque rerum.</p>
+
+
+    <script>
+        function changeBg(color) {
+
+            document.body.style.backgroundColor = color;
+
+            let txt = document.getElementsByClassName("text");
+
+            if (color == "#000000") {
+
+
+                for (let change of txt) {
+                    change.style.color = "white";
+                }
+
+            } else {
+                for (let change of txt) {
+
+                    change.style.color = "black";
+
+                }
+
+            }
+
+        }
+    </script>
+
+
+
+
+
+</body>
+
+</html>
